@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+.serverless/
+
+buildspec.yml
+
+properties.yml
+
+# testing
+coverage/
+
+# production
+build/
+.DS_Store
+.temp/
+properties.yml
+.scannerwork/

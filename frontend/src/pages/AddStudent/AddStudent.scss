@@ -1,0 +1,136 @@
+@import "../../config/variables.scss";
+
+.breadcrumbs {
+  padding: 30px 0 0;
+  margin-bottom: 10px;
+  @include laptop1024_1279 {
+    padding: 25px 0 0;
+  }
+  .links {
+    color: $gray51596c;
+    font-size: 13px;
+    @include laptop1024_1279 {
+      font-size: 12px;
+    }
+    a {
+      font-weight: $medium;
+      color: $gray51596c;
+      &:before {
+        content: "\77";
+        font-family: "whiz-business" !important;
+        background: $grayDFE6EF;
+        font-size: 8px;
+        padding: 3px 3px;
+        border-radius: 50%;
+        margin-right: 5px;
+        color: $gray51596c;
+      }
+    }
+  }
+  .sub-title {
+    font-size: 22px;
+    color: $blue1f2430;
+    font-weight: $medium;
+    line-height: 1.4;
+    @include laptop1024_1279 {
+      font-size: 18px;
+    }
+  }
+}
+
+.add-user-page {
+  .container-small{
+    position: relative;
+    .details-block {
+      padding: 15px;
+      background: $white;
+      box-shadow: 1px 1px 2px $white000d;
+      border-radius: 8px;
+      .MuiAppBar-colorDefault {
+        color: $white;
+        background-color: $white;
+        box-shadow: none;
+      }
+      .MuiPaper-root {
+        font-family: "Poppins", sans-serif;
+      }
+      .MuiTabs-root {
+        margin: 0;
+      }
+      .MuiTab-wrapper {
+        align-items: start;
+      }
+      .MuiTab-root {
+        font-family: "Poppins", sans-serif;
+        min-height: 30px;
+        text-transform: capitalize;
+        min-width: auto;
+        font-size: 16px;
+        font-weight: $medium;
+        color: $gray51596c;
+        padding: 0;
+        margin: 0 20px 0 0;
+      }
+      .MuiAppBar-root {
+        box-shadow: none;
+      }
+      .MuiPaper-elevation4 {
+        box-shadow: none;
+        height: 33px;
+        border-bottom: 1px solid $grayddd;
+      }
+      .MuiTab-textColorPrimary.Mui-selected {
+        font-size: 16px;
+        color: $blue;
+        font-weight: $medium;
+        padding: 0;
+      }
+      .MuiTabs-indicator {
+        bottom: 15px;
+        background-color: $blue;
+        height: 3px;
+      }
+      form {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        .input-box-group {
+          font-family: "Poppins", sans-serif;
+          // display: flex;
+          // flex-wrap: wrap;
+          // justify-content: space-between;
+          .input-box {
+            width: 49%;
+            padding-top: 10px !important;
+            margin: 0 0 5px 0;
+            label {
+              font-size: 13px;
+              color: $gray51596c;
+              font-weight: $medium;
+              margin: 0 0 3px;
+              span {
+                color: $redLight;
+              }
+            }
+            input {
+              font-family: "Poppins", sans-serif;
+              height: 35px;
+              font-size: 13px;
+              border-radius: 6px;
+              &::placeholder {
+                color: $grayb7b7b7;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.btn-student {
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}

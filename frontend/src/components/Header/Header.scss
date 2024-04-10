@@ -1,0 +1,117 @@
+@import "../../config/variables.scss";
+
+.header {
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s all;
+  z-index: 999;
+
+  .container-big {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    .logo {
+      display: block;
+      max-width: 280px;
+      width: 100%;
+      margin: 0;
+      @include md {
+        max-width: 250px;
+      }
+    }
+    .btn-dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      font-weight: 500;
+      margin: 0 0 0 25px;
+      padding: 0 15px;
+      background: #eff0f2;
+      border-radius: 4px;
+      transition: 0.2s all;
+      cursor: pointer;
+      &:hover {
+        background: #e3e4e4;
+      }
+      span {
+        margin: 0;
+      }
+      i {
+        font-size: 8px;
+        margin: 0 0 -1px 10px;
+      }
+    }
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 0 auto;
+    order: 2;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #8a8c90;
+      }
+    }
+    .login-group {
+      display: flex;
+      align-items: center;
+      .btn {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        @include md {
+          height: 35px;
+          line-height: 35px;
+          font-size: 14px;
+        }
+      }
+      .link-signin {
+        color: #fff;
+        background: #f06421;
+        padding: 0 25px;
+        margin: 0 0 0 15px;
+        border-radius: 30px;
+        &:hover {
+          background: #e05613;
+        }
+      }
+      .link-demo {
+        min-width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f06421;
+        background: none;
+        text-align: center;
+        padding: 0 15px;
+        border-radius: 30px;
+        border: 1px solid #f06421;
+        .icon-arrow-right {
+          margin: 0 0 0 7px;
+        }
+        &:hover {
+          color: #fff;
+          background: #f06421;
+        }
+      }
+    }
+  }
+}
